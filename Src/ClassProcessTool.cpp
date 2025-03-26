@@ -19,7 +19,7 @@ BOOL CALLBACK EnumProc( HWND hWnd, LPARAM lParam ) {
 		// Found a window matching the process ID
 		ed.hWnd = hWnd;
 		// Report success
-		System::SetLastError( ERROR_SUCCESS );
+		::SetLastError( ERROR_SUCCESS );
 		// Stop enumeration
 		return FALSE;
 	}
